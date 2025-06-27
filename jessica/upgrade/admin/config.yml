@@ -1,0 +1,19 @@
+
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - file: "data/settings.yml"
+        label: "Homepage & Event"
+        name: "settings"
+        fields:
+          - {label: "Event Date", name: "event_date", widget: "datetime"}
+          - {label: "Countries Represented", name: "countries", widget: "number"}
+          - {label: "Event Description", name: "event_description", widget: "text"}
